@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Saaransh Pandey</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Saaransh Pandey</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#research" onclick="toggleMenu()">Research</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Saaransh Pandey profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Saaransh Pandey</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/Resume-SaaranshPandey.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/saaransh-pandey'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/saaranshpandey'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />Data Scientist <br> Machine Learning Engineer</p>
+              <div class="leetcode-link-container">
+                <a href="https://leetcode.com/u/atemp791/" target="_blank" class="leetcode-button">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode Logo" class="leetcode-logo">
+                  <span>LeetCode Profile</span>
+                </a>
+              </div>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <div class="university">University of Pennsylvania</div>
+            <div class="course-info">M.S. in Electrical & Systems Engg. | Major in Data Science</div>
+            
+            <div class="university">Delhi Technological University</div>
+            <div class="course-info">B.E. in Engineering Physics | Major in Electronics</div>
+              
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                I'm a Data Scientist at Aeronautical Systems Incorporated (ASI) 
+                and a graduate student at the University of Pennsylvania. With over 
+                four years of experience in data science and software development, I 
+                specialize in building AI-driven solutions that solve complex, real-world 
+                challenges. My work spans across domains, from developing machine learning 
+                models for defense applications to contributing to cutting-edge research 
+                like the NASA Roman Space Telescope. <br><br>
+
+I thrive at the intersection of AI, data, and innovation—whether it's enhancing 
+decision-making in aerospace or leveraging deep learning for automation. Explore my 
+journey and check out some of the exciting projects I've worked on!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="assets/asi-logo.png" alt="Company Logo">
+              </div>
+              <h2 class="experience-sub-title project-title">Data Scientist</h2>
+              <p class="years experience-sub-title">2024 - Present</p>
+              <div class="skills">
+                <span>Azure</span> <span>Python</span> <span>Data Science</span>
+                <span>ML Ops</span> <span>LLM</span> <span>Pinecone</span> 
+                <span>MS SQL</span> <span>Power BI</span> <span>ETL</span> 
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="assets/uhg-logo.png" alt="Company Logo">
+              </div>
+              <h2 class="experience-sub-title project-title">Machine Learning Engineer</h2>
+              <p class="years experience-sub-title">2020 - 2023</p>
+              <div class="skills">
+                <span>Python</span> <span>Data Science</span>  <span>ML Ops</span> 
+                <span>ETL</span> <span>MSSQL</span> <span>Power BI</span> 
+                <span>SAS</span>  
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="assets/eshopbox-logo.png" alt="Company Logo">
+              </div>
+              <h2 class="experience-sub-title project-title">Software Developer Co-Op</h2>
+              <p class="years experience-sub-title">2017 - 2018</p>
+              <div class="skills">
+                <span>Python</span> <span>ML</span> <span>Google Cloud Platform</span>
+                <span>Angular</span> <span>NativeScript</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#research'"
+      />
+    </section>
+    <section id="research">
+        <p class="section__text__p1">Get A Glimpse Of My</p>
+        <h1 class="title">Research</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                      <img src="assets/upenn-logo.png" alt="Company Logo">
+                    </div>
+                    
+                    <h2 class="experience-sub-title project-title">Dr. Masao Sako</h2>
+                    
+                    <p class="years experience-sub-title">2024 - Present</p>
+                    <div class="skills">
+                      <span>NASA</span> <span>Roman Space Telescope</span> <span>Data Science</span>
+                      <span>NERSC Berkley Labs</span> <span>Python</span>
+                    </div>
+                  </div>
+
+                  <div class="details-container color-container">
+                    <div class="article-container">
+                      <img src="assets/iiitd-logo.png" alt="Company Logo">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Dr. Vivek Bohara</h2>
+                    <p class="years experience-sub-title">Summer 2019</p>
+                    <div class="skills">
+                      <span>Python</span> <span>GNU Radio</span> <span>Python</span>
+                      <span>Modulation</span> <span>5G Radio</span>
+                    </div>
+                  </div>
+
+                  <div class="details-container color-container">
+                    <div class="article-container">
+                      <img src="assets/dtu-logo.png" alt="Company Logo">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Dr. Ajeet Kumar</h2>
+                    <p class="years experience-sub-title">2019-20</p>
+                    <div class="skills">
+                      <span>Python</span> <span>MATLAB</span> <span>Simulation</span>
+                      <span>Chalcogenides</span>
+                    </div>
+                  </div>
+            </div>
+            
+          </div>
+          <h1 class="title">Research Work & Publications</h1>
+          <div class="research-container">
+            <div class="about-containers">
+              <div class="details-container color-container" data-status="Ongoing">
+                <div class="article-container">
+                  <img
+                    src="./assets/roman-logo.jpg"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Roman Space Telescope</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn unavailable-btn"
+                    onclick="//location.href='https://github.com/saaranshpandey'"
+                  >
+                    Github
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container" data-status="Published">
+                <div class="article-container">
+                  <img
+                    src="./assets/vlc-logo.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">VLC Modulation Toolkit</h2>
+                <div class="btn-container">
+                    <button
+                    class="btn btn-color-2 project-btn unavailable-btn"
+                    onclick="//location.href='https://github.com/saaranshpandey'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://ieeexplore.ieee.org/abstract/document/9118103')"
+                  >
+                    Paper
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container" data-status="Published">
+                <div class="article-container">
+                  <img
+                    src="./assets/chalco-1-logo.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Chalcogenides Analysis I</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S2214785320302108')"
+                  >
+                    Paper
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container" data-status="Published">
+                <div class="article-container">
+                  <img
+                    src="./assets/chalco-2-logo.png"
+                    alt="Project 4"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Chalcogenides Analysis II</h2>
+                <div class="btn-container">
+                  
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('assets/chalco-paper2.pdf')""
+                  >
+                    Paper
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+          />
+    </section>
+      
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj1-logo.png"
+                alt="Company Logo"
+                class="project-img"
+              />
+            </div>
+            
+            <h2 class="experience-sub-title project-title">Text Guided Image Editing</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn"
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Github</span>
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('assets/proj1.pdf')"
+              >
+                Paper
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj2-logo.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">NN Model Compression</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn"
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Github</span>
+              </button>
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn"
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Paper</span>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj3-logo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Fraudulent Transactions</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn "
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Github</span>
+              </button>
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn"
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Report</span>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj4-logo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Image and Text Classification</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn"
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Github</span>
+              </button>
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn"
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Report</span>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj5-logo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Big Data Analysis: Beer!</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn"
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Github</span>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj6-logo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Zomato Food Ratings</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn"
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Github</span>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj7-logo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Humor Detection Model</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn"
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Github</span>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj8-logo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Fake News Detector</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn unavailable-btn"
+                onclick="//location.href='https://github.com/saaranshpandey'"
+              >
+              <span>Github</span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:saaransh@seas.upenn.com">saaransh[at]seas[dot]upenn[dot]com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/saaransh-pandey">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Saaransh Pandey. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
